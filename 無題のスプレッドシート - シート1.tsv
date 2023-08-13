@@ -1,0 +1,11 @@
+Network	Nodes	Links	Directed / Undirected	N	L	‹K›
+Internet	Routers	Internet connections	Undirected	192,244	609,066	6.34
+WWW	Webpages	Links	Directed	325,729	1,497,134	4.6
+Power Grid	Power plants, transformers	Cables	Undirected	4,941	6,594	2.67
+Mobile-Phone Calls	Subscribers	Calls	Directed	36,595	91,826	2.51
+Email	Email addresses	Emails	Directed	57,194	103,731	1.81
+Science Collaboration	Scientists	Co-authorships	Undirected	23,133	93,437	8.08
+Actor Network	Actors	Co-acting	Undirected	702,388	29,397,908	83.71
+Citation Network	Papers	Citations	Directed	449,673	4,689,479	10.43
+E. Coli Metabolism	Metabolites	Chemical reactions	Directed	1,039	5,802	5.58
+Protein Interactions	Proteins	Binding interactions	Undirected	2,018	2,930	2.9
