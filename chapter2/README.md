@@ -20,4 +20,5 @@ A network is a catalog of a system’s components often called nodes or verti
 - 恋人関係のネットワーク→of key importance for the spread of sexually transmitted diseases, like AIDS, and of major interest for epidemiology.
 - 電話やメールで繋がる人間関係のネットワーク→capturing a mixture of professional, friendship or intimate links, of importance to communications and marketing.
 
-* ネットワーク科学とグラフ理論の用語整理（各行が同じ意味）
+* [ネットワーク科学とグラフ理論の用語整理（各行が同じ意味）](./sample.csv)
+* [頻繁に出てくるネットワーク(canonical datasets)]()
