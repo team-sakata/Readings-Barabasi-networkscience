@@ -89,10 +89,14 @@ The degree distribution is often shown on a log-log plot, in which we either plo
 
 - 俳優と映画のネットワーク
 - 病気とそれを引き起こす中心遺伝子のネットワーク [ここ](https://archive.nytimes.com/www.nytimes.com/interactive/2008/05/05/science/20080506_DISEASE.html?ref=health)からもっと細かい図が見られる
-  多部グラフの例としては
+
+多部グラフの例としては
+
 - レシピと食材と化合物のネットワーク
-  がある。
-  二部グラフ（多部グラフでも）では、Projection「射影」が取れて、二つのノードが同じノードとリンクしているときにそのノード間にリンクを作るもの。
+
+がある。
+
+二部グラフ（多部グラフでも）では、Projection「射影」が取れて、二つのノードが同じノードとリンクしているときにそのノード間にリンクを作るもの。
 
 ## Section 2.8 Paths and Distances
 
@@ -115,6 +119,9 @@ The degree distribution is often shown on a log-log plot, in which we either plo
 
 ネットワーク中のノード i から j に行く経路があるときに「連結」、そうでなければ「非連結」という（ij 間の距離は $`\infty`$ ）。
 グラフ全体が連結かどうかは隣接行列からすぐわかる。
+
+![](./figure-2-15.jpg)
+
 グラフが二つのクラスターに分けた時にその間をつなぐリンクを bridge という
 
 - 隣接行列を行や列を並び替えて区分行列になるなら、それぞれが非連結なクラスターに分かれる。
@@ -157,7 +164,9 @@ $$
 この本で取り扱うグラフは、ほとんどが重みなしネットワーク。
 科学で取り扱うグラフは多くが重みありネットワークだが、実際に重みが測れることは少ないため重みなしネットワークを仮定することは多い。
 ただし、今分析しているネットワークの重みを持ったバージョンを考えた時に性質が変わるのかどうかは常に気をつけたほうがいい。
+
 [Metcalfe の法則(1990s)](https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%88%E3%82%AB%E3%83%BC%E3%83%95%E3%81%AE%E6%B3%95%E5%89%87)
+
 [9] G. Gilder. Metcalfe’s law and legacy. Forbes ASAP, 1993.
 メトカーフの法則は $` L_{max} ~ N^2 `$ からきているが、妥当性は限定的である：
 

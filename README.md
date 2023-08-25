@@ -1,2 +1,15 @@
 # Readings-Barabasi-networkscience
-Readings of The network scienc by A. Barabasi
+
+Readings of The network science by A. Barabasi
+
+- chapter1
+- [chapter2](/chapter2/README.md)
+- chapter3
+- chapter4
+- chapter5
+- [chapter6](/chapter6/README.md)
+- chapter7
+- chapter8
+- chapter9
+- chapter10
+- chapter11
