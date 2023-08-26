@@ -41,6 +41,13 @@ $$
 
 ## 5.6 The Absence of Growth or Preferential Attachment
 
+スケールフリー特性の出現には，成長と優先的選択の両方とも必要なのか?
+![5.8 Model A and Model B](figures/figure-5-8.jpg)
+**a.** 成長のみ．$m_0=m=1 \text{(circles)}, \, 3 \text{(squares)}, \, 5 \text{(diamonds)}, \text{and} \; 7 \text{(triangles)} $  
+すべてのノードが等しい確率でリンクを取得するため，富豪になるプロセスが欠けている  
+**b.** 優先的選択のみ．$ t=N \text{(circles)}, \, 5N \text{(squares)}, \text{and} \; 40N \text{(diamonds)}$  
+定常性が失われ，ネットワークが完全なグラフに収束することになる  
+
 ## 5.7 Measuring Preferential Attachment
 
 ## 5.8 Non-linear Preferential Attachment
