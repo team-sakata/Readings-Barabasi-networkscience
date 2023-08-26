@@ -8,11 +8,9 @@ WWWや細胞の代謝ネットワークなどの全く異なるシステムが�
 ## 5.2 Growth and Preferential Attachment
 
 ランダムネットワークにはハブとべき乗則が存在しない  
-以下の特徴がないのが大きい  
-・成長  
-現実のネットワークは，ノード数 $N$ を継続的に増加させる成長プロセスの結果  
-・優先的な接続  
-現実のネットワークでは，新しいノードはより接続されているノードにリンクする傾向  
+以下のような特徴がないのが大きい  
+・成長：現実のネットワークは，ノード数 $N$ を継続的に増加させる成長プロセスの結果  
+・優先的選択：現実のネットワークでは，新しいノードはより接続されているノードにリンクする傾向  
 例）　WWW，論文，映画俳優
 
 ## 5.3 The Barabási-Albert Model
@@ -32,6 +30,14 @@ $β$ はdynamical exponentと呼ばれ，$\frac{1}{2}$ である
 ・度数の増加は線形未満（$β<1$）．新しいノードのリンクより既存ノードの方が多く奪い合いになるため  
 
 ## 5.5 Degree Distribution
+
+Barabási-Albertモデルはdegree exponent $γ=3$ のスケールフリーネットワークを生成
+$$p(k) \approx 2m^{1/\beta } k^{ - \gamma }  \hspace{20 mm} (5 . 9)
+$$
+![5.7 Probing the Analytical Predictions](figures/figure-5-7.jpg)
+**a.** $\: m_0=m=1 \text{(blue)}, \, 3 \text{(green)}, \, 5 \text{(grey)}, \text{and} \; 7 \text{(orange)}$  
+各色が平行である事実は，$γ$ が $m$ および $m_0$ から独立していることを示す  
+紫色の線の傾きは $-3$ で，degree exponent $γ=3$ に対応
 
 ## 5.6 The Absence of Growth or Preferential Attachment
 
