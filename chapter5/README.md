@@ -57,7 +57,10 @@ $$\frac{{\Delta k_i }}{{\Delta t}} \sim \Pi (k_i ) \hspace{20 mm} (5 . 20)$$
 ![5.9 Detecting Preferential Attachment](figures/figure-5-9.jpg)
 ![5.10 Evidence of Preferential Attachment](figures/figure-5-10.jpg)
 破線は線形の優先的選択 ( $π(k) \sim k^2$ ) ，実線は優先的選択なし( $π(k) \sim k$ ) 
+
 ## 5.8 Non-linear Preferential Attachment
+
+![5.12 Nonlinear Preferential Attachment](figures/figure-5-12.jpg)
 
 ## 5.9 The Origins of Preferential Attachment
 
