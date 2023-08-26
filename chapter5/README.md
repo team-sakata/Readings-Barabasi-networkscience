@@ -73,4 +73,7 @@ $$\frac{{\Delta k_i }}{{\Delta t}} \sim \Pi (k_i ) \hspace{20 mm} (5 . 20)$$
 
 ## 5.10 Diameter and Clustering Coefficient
 
+![5.18 Average Distance](figures/figure-5-18.jpg)
+![5.19 Clustering Coefficient](figures/figure-5-19.jpg)
+
 ## 5.11 Summary
