@@ -22,7 +22,14 @@ Barabási-Albertモデル（別名：BA モデル，スケールフリーモデ�
 $$\Pi (k_i ) = \frac{{k_i }}{{\sum\limits_j {k_j } }} \hspace{20 mm} (5 . 1)
 $$
 べき乗則とハブの起源は，成長と優先的選択の共存によって引き起こされる，富む者が更に富む現象
+
 ## 5.4 Degree Dynamics
+
+![5.6 Degree Dynamics](figures/figure-5-6.jpg)
+古いノードが若いノードよりも有利になり，最終的にはハブに  
+$β$ はdynamical exponentと呼ばれ，$\frac{1}{2}$ である  
+・すべてのノードは同じ動的法則に従う  
+・度数の増加は線形未満（$β<1$）．新しいノードのリンクより既存ノードの方が多く奪い合いになるため  
 
 ## 5.5 Degree Distribution
 
