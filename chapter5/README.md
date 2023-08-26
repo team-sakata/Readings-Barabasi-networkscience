@@ -2,7 +2,7 @@
 
 ## 5.1 Introduction
 
-WWWや細胞の代謝ネットワークなどの全く異なるシステムが，同じようなスケールフリーアーキテクチャに収束するのはなぜか?  
+WWWや細胞の代謝ネットワークなどの全く異なるシステムが，同じようなスケールフリーアーキテクチャに収束するのはなぜか？  
 スケールフリー特性の出現に関わるメカニズムがこの章の主要なトピック
 
 ## 5.2 Growth and Preferential Attachment
@@ -41,7 +41,7 @@ $$
 
 ## 5.6 The Absence of Growth or Preferential Attachment
 
-スケールフリー特性の出現には，成長と優先的選択の両方とも必要なのか?
+スケールフリー特性の出現には，成長と優先的選択の両方とも必要なのか？
 ![5.8 Model A and Model B](figures/figure-5-8.jpg)
 **a.** 成長のみ．$m_0=m=1 \text{(circles)}, \, 3 \text{(squares)}, \, 5 \text{(diamonds)}, \text{and} \; 7 \text{(triangles)} $  
 すべてのノードが等しい確率でリンクを取得するため，富豪になるプロセスが欠けている  
@@ -63,6 +63,13 @@ $$\frac{{\Delta k_i }}{{\Delta t}} \sim \Pi (k_i ) \hspace{20 mm} (5 . 20)$$
 ![5.12 Nonlinear Preferential Attachment](figures/figure-5-12.jpg)
 
 ## 5.9 The Origins of Preferential Attachment
+
+なぜ $Π(k)$ は $k$ に依存するのか？ $Π(k)$ が $k$ において線形になるのはなぜか？  
+ローカルメカニズム：ランダムなイベントとネットワークの構造的特性の間の相互作用  
+例）知人から人を紹介される，読んだ論文の参考文献をたどる．遺伝子の複製とタンパク質相互作用ネットワークの関係性も該当するらしい  
+グローバルメカニズム：新しいノードやリンクが，矛盾するニーズのバランスを取る＝全体を把握していることを前提  
+例）社会学における合理的選択理論，新しいケーブルを敷設する際の費用対効果の分析  
+詳細な数式は原著参照
 
 ## 5.10 Diameter and Clustering Coefficient
 
