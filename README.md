@@ -6,7 +6,7 @@ Readings of The network science by A. Barabasi
 - [chapter2](/chapter2/README.md)
 - chapter3
 - chapter4
-- chapter5
+- [chapter5](chapter5/README.md)
 - [chapter6](/chapter6/README.md)
 - chapter7
 - chapter8
