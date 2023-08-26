@@ -50,6 +50,13 @@ $$
 
 ## 5.7 Measuring Preferential Attachment
 
+優先的選択が実際のネットワークにも存在することを検出するには？
+条件1：ノードに接続する可能性 $Π(k)$ は、そのノードの次数 $k$ に依存  
+条件2：$Π(k)$ は $k$ において線形  
+$$\frac{{\Delta k_i }}{{\Delta t}} \sim \Pi (k_i ) \hspace{20 mm} (5 . 20)$$
+![5.9 Detecting Preferential Attachment](figures/figure-5-9.jpg)
+![5.10 Evidence of Preferential Attachment](figures/figure-5-10.jpg)
+破線は線形の優先的選択 ( $π(k) \sim k^2$ ) ，実線は優先的選択なし( $π(k) \sim k$ ) 
 ## 5.8 Non-linear Preferential Attachment
 
 ## 5.9 The Origins of Preferential Attachment
