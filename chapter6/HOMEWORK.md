@@ -2,7 +2,7 @@
 
 ## Accelerated Growth
 
-1. **Calculate the degree exponent of the directed Barabási-Albert model with accelerated growth, assuming that the degree of the newly arriving nodes increases in time as m(t) = tΘ.**
+1. **Calculate the degree exponent of the directed Barabási-Albert model with accelerated growth, assuming that the degree of the newly arriving nodes increases in time as $m(t) = t^Θ$.**
 
 ## The t-Party Evolving Network Model
 
@@ -13,9 +13,9 @@ In the t-party gender play no role, hence each newcomer is allowed to invite onl
 - This new node then invites one already partying node to a dance, establishing a new link with it.
 - The new node chooses its dance partner with probability proportional to the potential partner's attractiveness. If there are t nodes already in the party, the probability that node i receives a dance invitation is
 
-Πi=ηi∑jηj=ηit⟨η⟩
+  $$ \Pi \_i = \frac{{\eta _i }}{{\sum\nolimits_j {\eta _j } }} = \frac{{\eta _i }}{{t\left\langle \eta  \right\rangle }}$$
 
-where 〈η〉 is the average attractiveness.
+  where 〈η〉 is the average attractiveness.
 
 1. **Derive the time evolution of the node degrees, telling us how many dances a node had.**
 2. **Derive the degree distribution of nodes with attractiveness η.**
@@ -25,7 +25,7 @@ where 〈η〉 is the average attractiveness.
 
 Consider the Bianconi-Barabási model with two distinct fitnesses, η = a and η = 1. To be specific, let us assume that the fitness follows the double delta distribution
 
-ρ(η)=12δ(η−a)+12δ(η−1)with0≤a≤1
+$$ \rho (\eta ) = \frac{1}{2}\delta (\eta - a) + \frac{1}{2}\delta (\eta - 1)\hspace{10 mm}{\rm{ with }}\quad 0 \le a \le 1$$
 
 1. **Calculate the degree exponent, and its dependence on the parameter a.**
 2. **Calculate the stationary degree distribution of the network.**
@@ -34,7 +34,7 @@ Consider the Bianconi-Barabási model with two distinct fitnesses, η = a and η
 
 Assume that the growth of a network is governed by preferential attachment with additive fitness
 
-Π(ki)∼ηi+ki
+$$\Pi (k_i ) \sim \eta _i  + k_i$$
 
 where a different ηi is assigned to each node, chosen from a ρ(η) fitness distribution.
 

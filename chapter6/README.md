@@ -34,4 +34,28 @@ $$C = \int {\rho (\eta )\frac{\eta }{{1 - \beta (\eta )}}d\eta }  \hspace{20 mm}
 \*[連続体論](<https://ja.wikipedia.org/wiki/%E9%80%A3%E7%B6%9A%E4%BD%93_(%E4%BD%8D%E7%9B%B8%E7%A9%BA%E9%96%93%E8%AB%96)#:~:text=%E6%95%B0%E5%AD%A6%E3%81%AE%E4%B8%80%E5%88%86%E9%87%8E%E3%81%A7,(Continuum%20theory)%20%E3%81%A8%E5%91%BC%E3%81%B6%E3%80%82>)
 を使うと、と書いてあるが使わなくても示せそう。
 
+$$p_k  \approx C\int {d\eta \frac{{\rho (\eta )}}{\eta }\left( {\frac{m}{k}} \right)^{\frac{C}{\eta } + 1} }  \hspace{20 mm} (6 . 6)$$
+
+$$p_k  \sim \int\limits_0^1 {d\eta \frac{{C^* }}{\eta }\frac{1}{{k^{1 + C^* /\eta } }}}  \sim \frac{{k^{ - (1 + C^* )} }}{{\ln k}} \hspace{20 mm} (6 . 8)$$
+
 # Section 6.3 Measuring Fitness
+
+$$\ln k(t,t_i ,\eta _i ) = \beta (\eta _i )\ln t + B_i  \hspace{20 mm} (6 . 9)$$
+
+$$\frac{{k_2  - k_1 }}{{k_1 }} \sim t^{\frac{{n_2  - n_1 }}{C}} \hspace{20 mm} (6 . 10)$$
+
+$$\Pi _i  \sim \eta _i c_i^t P_i (t) \hspace{20 mm} (6 . 11)$$
+
+$$P_i (t) = \frac{1}{{\sqrt {2\pi t\sigma _i } }}e^{ - \frac{{(\ln t - \mu _i )^2 }}{{2\sigma _i^2 }}}  \hspace{20 mm} (6 . 12)$$
+
+$$C_i^t  = m\left( {e^{\frac{{\beta \eta _i }}{A}\Phi \left( {\frac{{\ln t - \mu _i }}{{\sigma _i }}} \right)}  - 1} \right) \hspace{20 mm} (6 . 13)$$
+
+$$\Phi (x) = \frac{1}{{\sqrt {2\pi } }}\int\limits_{ - \infty }^x {e^{ - y^2 /2} dy}  \hspace{20 mm} (6 . 14)$$
+
+# Section 6.4 Bose-Einstein Condensation
+
+# Section 6.5 Evolving Networks
+
+# Section 6.6 Summary
+
+\Pi (k_i ,t - t_i ) \sim k(t - t_i )^{ - \nu } \hspace{20 mm} (6 . 32)

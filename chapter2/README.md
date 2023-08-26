@@ -41,7 +41,7 @@ A network is a catalog of a system’s components often called nodes or verti
 - Section 2.10 - クラスター係数、平均クラスター係数
 - Advanced Topic 2.A - グローバルクラスター係数
 
-![alt text](./figure-2-17.jpg)
+![alt text](./figures/figure-2-17.jpg)
 
 ## Section 2.3 Degree, Average Degree and Degree Distribution
 
@@ -79,7 +79,7 @@ The degree distribution is often shown on a log-log plot, in which we either plo
 ノード i の次数は i を含む行か列を足し合わせていけばいい。（有向グラフの時は行の和が $`k_in`$　、列の和が $`k_out`$ になる）
 重要な式はすべて下の図にまとまっている。
 
-![alt text](./figure-2-5.jpg)
+![alt text](./figures/figure-2-5.jpg)
 
 ## Section 2.7 Bipartite Networks
 
@@ -102,7 +102,7 @@ The degree distribution is often shown on a log-log plot, in which we either plo
 
 ネットワークでは物理的な距離は意味がない。パス長を考えて、その中で最短のものを「距離」と呼ぶことにする。（数学的には、そのような経路は Geodesic path「測地線」と呼ばれる。）また、距離の最大値をネットワークの「直径」と呼ぶ。
 
-![image](./figure-2-12.jpg)
+![image](./figures/figure-2-12.jpg)
 
 - a:ノード 1 と 6 をむすぶある経路（オレンジ）のパス長は 5（距離は 3）
 - b:ノード 1 と 7 の距離は 3
@@ -120,7 +120,7 @@ The degree distribution is often shown on a log-log plot, in which we either plo
 ネットワーク中のノード i から j に行く経路があるときに「連結」、そうでなければ「非連結」という（ij 間の距離は $`\infty`$ ）。
 グラフ全体が連結かどうかは隣接行列からすぐわかる。
 
-![](./figure-2-15.jpg)
+![](./figures/figure-2-15.jpg)
 
 グラフが二つのクラスターに分けた時にその間をつなぐリンクを bridge という
 
@@ -142,7 +142,7 @@ $$
 \mathrm{C}_{\mathrm{i}}=\frac{2 \mathrm{~L}_{\mathrm{i}}}{\mathrm{k}_{\mathrm{i}}\left(\mathrm{k}_{\mathrm{i}}-1\right)}
 $$
 
-![](./figure-2-16.jpg)
+![](./figures/figure-2-16.jpg)
 
 - クラスター係数は隣接しているノードが繋がっている確率である
   （図を見るとおかしいように見えるが、全部のペアを考えることに注意。四面体でかくとわかりやすい）
@@ -157,7 +157,7 @@ $$
 # Section 2.5 Real Networks are Sparse
 
 実世界のネットワークは非常に疎になっている
-![alt text](./figure-2-7.jpg)
+![alt text](./figures/figure-2-7.jpg)
 
 # Section 2.6 Weighted Networks
 
@@ -176,6 +176,7 @@ $$
 # Section 2.11 Summary
 
 具体的にイーストのタンパク質の例からそれぞれの値を出してみている。
-![](./figure-2-18.jpg)
+![](./figures/figure-2-18.jpg)
+
 特筆すべきこととして、次数の分布は 6 前後にピークが来ること。6 次の隔たりを想起させる。
 まとめられれば良いと思う
