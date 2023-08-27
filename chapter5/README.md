@@ -25,7 +25,7 @@ $$
 
 ## 5.4 Degree Dynamics
 
-![5.6 Degree Dynamics](figures/figure-5-6.jpg)
+![5.6 Degree Dynamics](chapter5/figures/figure-5-6.jpg)
 古いノードが若いノードよりも有利になり，最終的にはハブに  
 $β$ はdynamical exponentと呼ばれ，$\frac{1}{2}$ である  
 - すべてのノードは同じ力学的法則に従う  
@@ -36,7 +36,7 @@ $β$ はdynamical exponentと呼ばれ，$\frac{1}{2}$ である
 Barabási-Albertモデルはdegree exponent $γ=3$ のスケールフリーネットワークを生成
 $$p(k) \approx 2m^{1/\beta } k^{ - \gamma }  \hspace{20 mm} (5 . 9)
 $$
-![5.7 Probing the Analytical Predictions](figures/figure-5-7.jpg)
+![5.7 Probing the Analytical Predictions](chapter5/figures/figure-5-7.jpg)
 **a.** $\: m_0=m=1 \text{(blue)}, \, 3 \text{(green)}, \, 5 \text{(grey)}, \text{and} \; 7 \text{(orange)}$  
 各色が平行である事実は，$γ$ が $m$ および $m_0$ から独立していることを示す  
 紫色の線の傾きは $-3$ で，degree exponent $γ=3$ に対応
@@ -44,7 +44,7 @@ $$
 ## 5.6 The Absence of Growth or Preferential Attachment
 
 スケールフリー特性の出現には，成長と優先的選択の両方とも必要なのか？
-![5.8 Model A and Model B](figures/figure-5-8.jpg)
+![5.8 Model A and Model B](chapter5/figures/figure-5-8.jpg)
 **a.** 成長のみ．$m_0=m=1 \text{(circles)}, \, 3 \text{(squares)}, \, 5 \text{(diamonds)}, \text{and} \; 7 \text{(triangles)} $  
 すべてのノードが等しい確率でリンクを取得するため，富豪になるプロセスが欠けている  
 **b.** 優先的選択のみ．$ t=N \text{(circles)}, \, 5N \text{(squares)}, \text{and} \; 40N \text{(diamonds)}$  
@@ -57,13 +57,13 @@ $$
 - 条件2：$Π(k)$ は $k$ において線形  
 $$\frac{{\Delta k_i }}{{\Delta t}} \sim \Pi (k_i ) \hspace{20 mm} (5 . 20)$$
 
-![5.9 Detecting Preferential Attachment](figures/figure-5-9.jpg)
-![5.10 Evidence of Preferential Attachment](figures/figure-5-10.jpg)
+![5.9 Detecting Preferential Attachment](chapter5/figures/figure-5-9.jpg)
+![5.10 Evidence of Preferential Attachment](chapter5/figures/figure-5-10.jpg)
 破線は線形の優先的選択 ( $π(k) \sim k^2$ ) ，実線は優先的選択なし( $π(k) \sim k$ ) 
 
 ## 5.8 Non-linear Preferential Attachment
 
-![5.12 Nonlinear Preferential Attachment](figures/figure-5-12.jpg)
+![5.12 Nonlinear Preferential Attachment](chapter5/figures/figure-5-12.jpg)
 
 ## 5.9 The Origins of Preferential Attachment
 
@@ -77,8 +77,8 @@ $$\frac{{\Delta k_i }}{{\Delta t}} \sim \Pi (k_i ) \hspace{20 mm} (5 . 20)$$
 
 ## 5.10 Diameter and Clustering Coefficient
 
-![5.18 Average Distance](figures/figure-5-18.jpg)
-![5.19 Clustering Coefficient](figures/figure-5-19.jpg)
+![5.18 Average Distance](chapter5/figures/figure-5-18.jpg)
+![5.19 Clustering Coefficient](chapter5/figures/figure-5-19.jpg)
 
 ## 5.11 Summary
 
