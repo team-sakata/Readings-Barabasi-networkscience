@@ -28,9 +28,9 @@ $$
 <img src="./figures/figure-5-6.jpg" alt="5.6 Degree Dynamics">
 
 古いノードが若いノードよりも有利になり，最終的にはハブに  
- $β$ はdynamical exponentと呼ばれ，$\frac{1}{2}$ である  
+ $β$ はdynamical exponentと呼ばれ， $\frac{1}{2}$ である  
 - すべてのノードは同じ力学的法則に従う  
-- 度数の増加は線形未満（$β<1$）．新しいノードのリンクより既存ノードの方が多く，奪い合いになるため  
+- 度数の増加は線形未満（ $β<1$ ）．新しいノードのリンクより既存ノードの方が多く，奪い合いになるため  
 
 ## 5.5 Degree Distribution
 
@@ -39,8 +39,8 @@ $$p(k) \approx 2m^{1/\beta } k^{ - \gamma }  \hspace{20 mm} (5 . 9)$$
 
 <img src="./figures/figure-5-7.jpg" alt="5.7 Probing the Analytical Predictions">
 
-**a.** $\: m_0=m=1 \text{(blue)}, \, 3 \text{(green)}, \, 5 \text{(grey)}, \text{and} \; 7 \text{(orange)}$  
-各色が平行である事実は，$γ$ が $m$ および $m_0$ から独立していることを示す  
+**a.** $\: m_0=m=1 \text{(blue)}, 3 \text{(green)}, 5 \text{(grey)}, 7 \text{(orange)}$  
+各色が平行である事実は， $γ$ が $m$ および $m_0$ から独立していることを示す  
 紫色の線の傾きは $-3$ で，degree exponent $γ=3$ に対応
 
 ## 5.6 The Absence of Growth or Preferential Attachment
@@ -49,16 +49,16 @@ $$p(k) \approx 2m^{1/\beta } k^{ - \gamma }  \hspace{20 mm} (5 . 9)$$
 
 <img src="./figures/figure-5-8.jpg" alt="5.8 Model A and Model B">
 
-**a.** 成長のみ．$m_0=m=1 \text{(circles)}, \, 3 \text{(squares)}, \, 5 \text{(diamonds)}, \text{and} \; 7 \text{(triangles)} $  
+**a.** 成長のみ． $m_0=m=1 \text{(circles)}, 3 \text{(squares)}, 5 \text{(diamonds)}, 7 \text{(triangles)} $  
 すべてのノードが等しい確率でリンクを取得するため，富豪になるプロセスが欠けている  
-**b.** 優先的選択のみ．$ t=N \text{(circles)}, \, 5N \text{(squares)}, \text{and} \; 40N \text{(diamonds)}$  
+**b.** 優先的選択のみ． $t=N \text{(circles)}, 5N \text{(squares)}, 40N \text{(diamonds)}$  
 定常性が失われ，ネットワークが完全なグラフに収束することになる  
 
 ## 5.7 Measuring Preferential Attachment
 
 優先的選択が実際のネットワークにも存在することを検出するには？  
 - 条件1：ノードに接続する可能性 $Π(k)$ は、そのノードの次数 $k$ に依存  
-- 条件2：$Π(k)$ は $k$ において線形  
+- 条件2： $Π(k)$ は $k$ において線形  
 $$\frac{{\Delta k_i }}{{\Delta t}} \sim \Pi (k_i ) \hspace{20 mm} (5 . 20)$$
 
 <img src="./figures/figure-5-9.jpg" alt="5.9 Detecting Preferential Attachment">
@@ -98,7 +98,7 @@ Erdős-RényiモデルやWatts-Strogatzモデルは絵画を写真に撮った�
 - あくまで最小限の原理証明モデル
 
 
-t-miura memo:
+t-miura memo:  
 βは奪い合いになるので1より小さくならざるを得ない ← 時間の指数
 
 γは一度に追加するリンク数mと独立で -3 ←次数分布の指数
