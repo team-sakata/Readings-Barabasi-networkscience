@@ -1,4 +1,5 @@
 # 5 The Barabási-Albert Model
+summerised by [Yatima Kagurazaka](https://twitter.com/Yatima_K)
 
 ## 5.1 Introduction
 
@@ -11,6 +12,7 @@ WWWや細胞の代謝ネットワークなどの全く異なるシステムが�
 以下のような特徴がないのが大きい  
 - 成長：現実のネットワークは，ノード数 $N$ を継続的に増加させる成長プロセスの結果  
 - 優先的選択：現実のネットワークでは，新しいノードはより接続されているノードにリンクする傾向  
+
 例）WWW，論文，映画俳優
 
 ## 5.3 The Barabási-Albert Model
@@ -26,8 +28,8 @@ $$
 ![5.6 Degree Dynamics](figures/figure-5-6.jpg)
 古いノードが若いノードよりも有利になり，最終的にはハブに  
 $β$ はdynamical exponentと呼ばれ，$\frac{1}{2}$ である  
-- すべてのノードは同じ動的法則に従う  
-- 度数の増加は線形未満（$β<1$）．新しいノードのリンクより既存ノードの方が多く奪い合いになるため  
+- すべてのノードは同じ力学的法則に従う  
+- 度数の増加は線形未満（$β<1$）．新しいノードのリンクより既存ノードの方が多く，奪い合いになるため  
 
 ## 5.5 Degree Distribution
 
@@ -50,10 +52,11 @@ $$
 
 ## 5.7 Measuring Preferential Attachment
 
-優先的選択が実際のネットワークにも存在することを検出するには？
-条件1：ノードに接続する可能性 $Π(k)$ は、そのノードの次数 $k$ に依存  
-条件2：$Π(k)$ は $k$ において線形  
+優先的選択が実際のネットワークにも存在することを検出するには？  
+- 条件1：ノードに接続する可能性 $Π(k)$ は、そのノードの次数 $k$ に依存  
+- 条件2：$Π(k)$ は $k$ において線形  
 $$\frac{{\Delta k_i }}{{\Delta t}} \sim \Pi (k_i ) \hspace{20 mm} (5 . 20)$$
+
 ![5.9 Detecting Preferential Attachment](figures/figure-5-9.jpg)
 ![5.10 Evidence of Preferential Attachment](figures/figure-5-10.jpg)
 破線は線形の優先的選択 ( $π(k) \sim k^2$ ) ，実線は優先的選択なし( $π(k) \sim k$ ) 
@@ -69,7 +72,7 @@ $$\frac{{\Delta k_i }}{{\Delta t}} \sim \Pi (k_i ) \hspace{20 mm} (5 . 20)$$
 例）知人から人を紹介される，読んだ論文の参考文献をたどる．遺伝子の複製とタンパク質相互作用ネットワークの関係性も該当するらしい  
 - グローバルメカニズム：新しいノードやリンクが，矛盾するニーズのバランスを取る＝全体を把握していることを前提  
 例）社会学における合理的選択理論，新しいケーブルを敷設する際の費用対効果の分析  
-  
+
 詳細な数式は原著参照
 
 ## 5.10 Diameter and Clustering Coefficient
@@ -80,7 +83,7 @@ $$\frac{{\Delta k_i }}{{\Delta t}} \sim \Pi (k_i ) \hspace{20 mm} (5 . 20)$$
 ## 5.11 Summary
 
 ネットワーク構造と進化は切り離せない  
-Erdős-RényiモデルやWatts-Strogatzモデルは絵画の写真のようなものであって，絵画を実際に描いたわけではない  
+Erdős-RényiモデルやWatts-Strogatzモデルは絵画を写真に撮ったようなものであって，絵画を描いていったようなものではない  
   
 以下のようなBarabási-Albertモデルの制限は，第6章で解決
 - 現実のネットワークのdegree exponentは $γ=2～5$
