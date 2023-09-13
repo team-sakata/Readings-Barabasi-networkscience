@@ -39,7 +39,7 @@ $$\sum\limits_{i \in C} {k_i^{{\mathop{\rm int}} } (C)}  > \sum\limits_{i \in C}
 ## 9.3 Hierarchical Clustering
 実行時間が $N$ に応じて多項式的に増加するアルゴリズム
   
-凝集手順: Ravasz アルゴリズム  
+凝集的アプローチ: Ravasz アルゴリズム  
 類似性の高いノードを同じコミュニティにマージ  
 1. 類似性行列を定義  
 2. グループの類似性決定  
@@ -48,11 +48,12 @@ $$\sum\limits_{i \in C} {k_i^{{\mathop{\rm int}} } (C)}  > \sum\limits_{i \in C}
 
 $o(N^2) + o(N^2) + o(NlogN)$ であり， $o(e^N)$ の総当りよりはるかに高速  
 
-分裂的手順: Girvan-Newman アルゴリズム  
+分裂的アプローチ: Girvan-Newman アルゴリズム  
 類似性の低いリンクを削除してコミュニティを分離  
-1. 中心性の定義
-2. 階層的クラスタリング
-
+  
+<img src="./figures/figure-9-12.jpg" alt="9.12 The Girvan-Newman Algorithm">
+  
+中心性（基本的にはアルゴリズムが高速となるbetweenness）の高いものから削除  
 計算量は $o(L^2N)$ ，疎なネットワークなら $o(N^3)$ 
 
 ## 9.4 Modularity
@@ -61,7 +62,7 @@ $$M = \sum\limits_{c = 1}^{n_c } {\left[ {\frac{{L_c }}{L} - \left( {\frac{{k_c 
   
 <img src="./figures/figure-9-16.jpg" alt="9.16 Modularity">
 
-モジュラリティベースのアルゴリズム：最適化貪欲法，Louvain法    
+モジュラリティベースのアルゴリズム：最適化貪欲法，Louvain法（貪欲法については原著参照）  
 限界：モジュラリティを最大化しようとすると，以下を満たすコミュニティは検出できなくなってしまう  
 $$k \le \sqrt {2L}  \hspace{20 mm} (9 . 14)$$
 
