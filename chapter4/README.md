@@ -1,5 +1,7 @@
 # chapter4
 
+[スライド](https://img.hideo54.com/slides/barabasi-chap-1.pdf)
+
 **べき分布の傾きが重要**
 
 [SciSci創始者Priceの本](https://www.degruyter.com/document/doi/10.7312/pric91844/html)
