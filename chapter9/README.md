@@ -31,10 +31,38 @@ $$
 弱いコミュニティ：内部次数の合計が外部次数の合計を超えるサブグラフ（下図c）  
 $$\sum\limits_{i \in C} {k_i^{{\mathop{\rm int}} } (C)}  > \sum\limits_{i \in C} {k_i^{ext} (C)}  \hspace{20 mm} (9 . 2)$$  
 
-<img src="./figures/figure-9-5.jpg" alt="9.5
-Defining Communities">
+<img src="./figures/figure-9-5.jpg" alt="9.5 Defining Communities">
   
 コミュニティの分割パターンは指数関数より速く増加するため，効率の良いアルゴリズムが必要  
-（ブルートフォースだと100ノードを半々にする場合 $10^{16}$ 年かかる）  
+（ブルートフォースだと $100$ ノードを半々にする場合 $10^{16}$ 年かかる）  
 
-## 
+## 9.3 Hierarchical Clustering
+実行時間が $N$ に応じて多項式的に増加するアルゴリズム
+  
+凝集手順: Ravasz アルゴリズム  
+類似性の高いノードを同じコミュニティにマージ  
+1. 類似性行列を定義  
+2. グループの類似性決定  
+3. 階層的クラスタリングを適用  
+4. 樹状図化  
+
+$o(N^2) + o(N^2) + o(NlogN)$ であり， $o(e^N)$ の総当りよりはるかに高速  
+
+分裂的手順: Girvan-Newman アルゴリズム  
+類似性の低いリンクを削除してコミュニティを分離  
+1. 中心性の定義
+2. 階層的クラスタリング
+
+計算量は $o(L^2N)$ ，疎なネットワークなら $o(N^3)$ 
+
+## 9.4 Modularity
+モジュラリティは，ランダムな構成からの系統的な偏差を利用し、各パーティションの質を定量化  
+$$M = \sum\limits_{c = 1}^{n_c } {\left[ {\frac{{L_c }}{L} - \left( {\frac{{k_c }}{{2L}}} \right)^2 } \right]}  \hspace{20 mm} (9 . 12)$$
+  
+<img src="./figures/figure-9-16.jpg" alt="9.5 Defining Communities">
+  
+モジュラリティの限界  
+モジュラリティを最大化しようとすると， $k \le \sqrt {2L}  \hspace{20 mm} (9 . 14)$ を満たすコミュニティは検出できなくなってしまう  
+  
+モジュラリティベースのアルゴリズム：最適化貪欲法，Louvain法  
+
