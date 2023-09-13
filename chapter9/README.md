@@ -39,16 +39,25 @@ $$\sum\limits_{i \in C} {k_i^{{\mathop{\rm int}} } (C)}  > \sum\limits_{i \in C}
 ## 9.3 Hierarchical Clustering
 実行時間が $N$ に応じて多項式的に増加するアルゴリズム
   
-凝集的アプローチ: Ravasz アルゴリズム  
+凝集的アプローチ: Ravaszアルゴリズム  
 類似性の高いノードを同じコミュニティにマージ  
-1. 類似性行列を定義  
-2. グループの類似性決定  
-3. 階層的クラスタリングを適用  
-4. 樹状図化  
+  
+相互に接続し隣接ノードを共有するノードは，同じコミュニティに属している可能性が高い  
+リンクごとに以下の式を使い，類似性の行列を求める  
+$$x_{ij}^o  = \frac{{J(i,j)}}{{\min (k_i ,k_j ) + 1 - \Theta (A_{ij} )}} \hspace{20 mm} (9 . 7)$$  
+$Θ(x)$ は正なら $1$ ，非正なら $0$ ． $J(i, j)$ はノードiとjの共通の隣接ノードの数
+
+<img src="./figures/figure-9-9.jpg" alt="9.9 The Ravasz Algorithm">
+  
+<img src="./figures/figure-9-10.jpg" alt="9.10 Cluster Similarity">
+  
+Single Linkage: $x_{ij}$ が最小となるペア  
+Complete Linkage: $x_{ij}$ が最大となるペア  
+Average Linkage: 全ての $x_{ij}$ の平均（Ravaszアルゴリズムでは，これを使用してコミュニティ同士の類似度を定量化）  
 
 $o(N^2) + o(N^2) + o(NlogN)$ であり， $o(e^N)$ の総当りよりはるかに高速  
 
-分裂的アプローチ: Girvan-Newman アルゴリズム  
+分裂的アプローチ: Girvan-Newmanアルゴリズム  
 類似性の低いリンクを削除してコミュニティを分離  
   
 <img src="./figures/figure-9-12.jpg" alt="9.12 The Girvan-Newman Algorithm">
