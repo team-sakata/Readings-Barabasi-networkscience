@@ -1,6 +1,6 @@
 # chapter4
 
-[スライド](https://img.hideo54.com/slides/barabasi-chap-1.pdf)
+[スライド](https://img.hideo54.com/slides/barabasi-chap-4.pdf)
 
 **べき分布の傾きが重要**
 
