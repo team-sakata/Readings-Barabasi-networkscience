@@ -59,10 +59,18 @@ $o(N^2) + o(N^2) + o(NlogN)$ であり， $o(e^N)$ の総当りよりはるか�
 モジュラリティは，ランダムな構成からの系統的な偏差を利用し、各パーティションの質を定量化  
 $$M = \sum\limits_{c = 1}^{n_c } {\left[ {\frac{{L_c }}{L} - \left( {\frac{{k_c }}{{2L}}} \right)^2 } \right]}  \hspace{20 mm} (9 . 12)$$
   
-<img src="./figures/figure-9-16.jpg" alt="9.5 Defining Communities">
-  
-モジュラリティの限界  
-モジュラリティを最大化しようとすると， $k \le \sqrt {2L}  \hspace{20 mm} (9 . 14)$ を満たすコミュニティは検出できなくなってしまう  
-  
-モジュラリティベースのアルゴリズム：最適化貪欲法，Louvain法  
+<img src="./figures/figure-9-16.jpg" alt="9.16 Modularity">
 
+モジュラリティベースのアルゴリズム：最適化貪欲法，Louvain法    
+限界：モジュラリティを最大化しようとすると，以下を満たすコミュニティは検出できなくなってしまう  
+$$k \le \sqrt {2L}  \hspace{20 mm} (9 . 14)$$
+
+## 9.5 Overlapping Communities
+前の節でのアルゴリズムは，ノードごとに単一のコミュニティのみ割り当てられていたが，実際は並列や入れ子状に複数コミュニティに属することが多い
+  
+クリークパーコレーションアルゴリズム (CFinder)
+<img src="./figures/figure-9-20.jpg" alt="9.20 The Clique Percolation Algorithm (CFinder)">
+前の三角形と1つのリンクを共有するように、ネットワーク全体に三角形を転がしていく  
+  
+リンククラスタリング  
+ノードは複数コミュニティに属しても，リンクは単一コミュニティであることが多いという前提でのアルゴリズム  
