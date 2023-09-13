@@ -69,7 +69,9 @@ $$k \le \sqrt {2L}  \hspace{20 mm} (9 . 14)$$
 前の節でのアルゴリズムは，ノードごとに単一のコミュニティのみ割り当てられていたが，実際は並列や入れ子状に複数コミュニティに属することが多い
   
 クリークパーコレーションアルゴリズム (CFinder)
+
 <img src="./figures/figure-9-20.jpg" alt="9.20 The Clique Percolation Algorithm (CFinder)">
+
 前の三角形と1つのリンクを共有するように、ネットワーク全体に三角形を転がしていく  
   
 リンククラスタリング  
@@ -78,7 +80,7 @@ $$k \le \sqrt {2L}  \hspace{20 mm} (9 . 14)$$
 ## 9.6 Testing Communities
 コミュニティ検出の精度と計算効率を評価するための概念
 
-正確さ  
+### 正確さ  
   
 Girvan-Newman (GN) ベンチマーク  
 サイズ $N_c =32$ の $n_c =4$ コミュニティに分割された $N= 128$ ノードで構成
@@ -87,8 +89,7 @@ $$\mu  = \frac{{k^{ext} }}{{k^{ext}  + k^{{\mathop{\rm int}} } }} \hspace{20 mm}
 Lancichinetti-Fortunato-Radicchi (LFR) ベンチマーク  
 ノード次数とコミュニティサイズの両方がべき乗則  
 
-
-速度
+### 速度
 Name |	Nature |	Comp.
 ----|----|----
 Ravasz |	Hierarchical Agglomerative |	O(N2)
@@ -99,4 +100,13 @@ Louvain |	Modularity Optimization |	O(L)
 Infomap |	Flow Optimization |	O(NlogN)
 Clique Percolation (CFinder) |	Overlapping Communities |	Exp(N)
 Link Clustering |	Hierarchical Agglomerative; Overlapping Communities |	O(N2)
+
+## 9.7 Characterizing Communities
+
+<img src="./figures/figure-9-29.jpg" alt="9.29 Community Size Distribution">
+
+<img src="./figures/figure-9-30.jpg" alt="9.30 Communities and Link Weights">
+
+a. 携帯電話ネットワーク．重みはおそらく通話時間．異なるコミュニティだと短くなりやすい  
+b. 輸送システム．異なるコミュニティ間のほうが輸送量が多くなる  
 
