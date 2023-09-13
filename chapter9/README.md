@@ -21,14 +21,17 @@ H2: 接続性と密度の仮説
 ※　ある程度本質に迫る仮説だが，一意に定義できるものではない  
   
 いくつかの定義  
-最大クリーク：メンバー全員がお互いを知っている個人のグループ（下図a）  
+### 最大クリーク
+メンバー全員がお互いを知っている個人のグループ（下図a）  
 - ネットワークにおいて三角形のクリークは頻繁に現れるが，それより大きいものはまれ  
 - 制約が厳しすぎる．9.1節の2,3番目の例は検出できない  
 
-強いコミュニティ：外部ノードよりも内部ノードへのリンクを多く持つノード同士のサブグラフ（下図b）  
+### 強いコミュニティ
+外部ノードよりも内部ノードへのリンクを多く持つノード同士のサブグラフ（下図b）  
 $$k_i^{{\mathop{\rm int}} } (C) > k_i^{ext} (C) \hspace{20 mm} (9 . 1)
 $$  
-弱いコミュニティ：内部次数の合計が外部次数の合計を超えるサブグラフ（下図c）  
+### 弱いコミュニティ
+内部次数の合計が外部次数の合計を超えるサブグラフ（下図c）  
 $$\sum\limits_{i \in C} {k_i^{{\mathop{\rm int}} } (C)}  > \sum\limits_{i \in C} {k_i^{ext} (C)}  \hspace{20 mm} (9 . 2)$$  
 
 <img src="./figures/figure-9-5.jpg" alt="9.5 Defining Communities">
@@ -39,7 +42,7 @@ $$\sum\limits_{i \in C} {k_i^{{\mathop{\rm int}} } (C)}  > \sum\limits_{i \in C}
 ## 9.3 Hierarchical Clustering
 実行時間が $N$ に応じて多項式的に増加するアルゴリズム
   
-凝集的アプローチ: Ravaszアルゴリズム  
+### Ravaszアルゴリズム  
 類似性の高いノードを同じコミュニティにマージ  
   
 相互に接続し隣接ノードを共有するノードは，同じコミュニティに属している可能性が高い  
@@ -57,7 +60,7 @@ Average Linkage: 全ての $x_{ij}$ の平均（Ravaszアルゴリズムでは�
 
 $o(N^2) + o(N^2) + o(NlogN)$ であり， $o(e^N)$ の総当りよりはるかに高速  
 
-分裂的アプローチ: Girvan-Newmanアルゴリズム  
+### Girvan-Newmanアルゴリズム  
 類似性の低いリンクを削除してコミュニティを分離  
   
 <img src="./figures/figure-9-12.jpg" alt="9.12 The Girvan-Newman Algorithm">
@@ -78,13 +81,13 @@ $$k \le \sqrt {2L}  \hspace{20 mm} (9 . 14)$$
 ## 9.5 Overlapping Communities
 前の節でのアルゴリズムは，ノードごとに単一のコミュニティのみ割り当てられていたが，実際は並列や入れ子状に複数コミュニティに属することが多い
   
-クリークパーコレーションアルゴリズム (CFinder)
+### クリークパーコレーションアルゴリズム (CFinder)
 
 <img src="./figures/figure-9-20.jpg" alt="9.20 The Clique Percolation Algorithm (CFinder)">
 
 前の三角形と1つのリンクを共有するように、ネットワーク全体に三角形を転がしていく  
   
-リンククラスタリング  
+### リンククラスタリング  
 ノードは複数コミュニティに属しても，リンクは単一コミュニティであることが多いという前提でのアルゴリズム．詳細は原著参照  
 
 ## 9.6 Testing Communities
@@ -92,11 +95,11 @@ $$k \le \sqrt {2L}  \hspace{20 mm} (9 . 14)$$
 
 ### 正確さ  
   
-Girvan-Newman (GN) ベンチマーク  
+#### Girvan-Newman (GN) ベンチマーク  
 サイズ $N_c =32$ の $n_c =4$ コミュニティに分割された $N= 128$ ノードで構成
 $$\mu  = \frac{{k^{ext} }}{{k^{ext}  + k^{{\mathop{\rm int}} } }} \hspace{20 mm} (9 . 18)$$
   
-Lancichinetti-Fortunato-Radicchi (LFR) ベンチマーク  
+#### Lancichinetti-Fortunato-Radicchi (LFR) ベンチマーク  
 ノード次数とコミュニティサイズの両方がべき乗則  
 
 ### 速度
