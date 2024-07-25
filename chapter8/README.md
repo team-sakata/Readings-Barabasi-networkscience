@@ -31,13 +31,13 @@ Section 2 では、普通の格子について堅牢性を検討しましたが�
 Section 2 の理論では「ある値からガラッと崩壊する」ような形だったのに対して、どれだけ取り除いてもネットワークが崩壊しないという結果になりました。
 こうした性質はどのような場合に現れるのでしょうか。
 
-$\kappa = \frac{\langle k^2 \rangle}{k} > 2$ であれば巨大なコンポーネントが生まれる、とする  Molloy-Reed  基準があります。2を下回ればネットワークは多くのプツ切れのコンポーネントに分かれてしまいます。ランダムネットワークであれば $\langle k^2 \rangle = \langle k \rangle (1 + \langle k \rangle$ として、$\langle k \rangle > 1$ となります。
+$\kappa = \frac{\langle k^2 \rangle}{k} > 2$ であれば巨大なコンポーネントが生まれる、とする  Molloy-Reed  基準があります。2を下回ればネットワークは多くのプツ切れのコンポーネントに分かれてしまいます。ランダムネットワークであれば $\langle k^2 \rangle = \langle k \rangle (1 + \langle k \rangle$ として、 $\langle k \rangle > 1$ となります。
 
-$f_c = 1 - \frac{1}{\frac{\langle k^2 \rangle}{k} - 1}$ が導け、同様に $\langle k^2 \rangle = \langle k \rangle (1 + \langle k \rangle$ を当てはめると、$f_c^{ER} = 1 - \frac{1}{\langle k \rangle}$ となります (このあたりの導出の詳細は Advanced Topic に載っているらしい)。つまり、ランダムネットワークの密度が大きければ大きいほど、ネットワークを崩壊させるのは難しくなります。
+$f_c = 1 - \frac{1}{\frac{\langle k^2 \rangle}{k} - 1}$ が導け、同様に $\langle k^2 \rangle = \langle k \rangle (1 + \langle k \rangle$ を当てはめると、 $f_c^{ER} = 1 - \frac{1}{\langle k \rangle}$ となります (このあたりの導出の詳細は Advanced Topic に載っているらしい)。つまり、ランダムネットワークの密度が大きければ大きいほど、ネットワークを崩壊させるのは難しくなります。
 
 ![](http://networksciencebook.com/images/ch-08/figure-8-9.jpg)
 
-$f_c$ の式で、$\langle k \rangle, \langle k^2 \rangle$ をスケールフリーネットワークのパラメータ $\gamma$ や $k_{max}, k_{min}$ で置き換えると
+$f_c$ の式で、 $\langle k \rangle, \langle k^2 \rangle$ をスケールフリーネットワークのパラメータ $\gamma$ や $k_{max}, k_{min}$ で置き換えると
 
 * $2 < \gamma < 3$ では $1 - \frac{1}{\frac{\gamma - 2}{3 - \gamma} k_{min}^{\gamma - 2} k_{max}^{3 - \gamma} - 1}$
 * $\gamma > 3$ では $1 - \frac{1}{\frac{\gamma - 2}{\gamma - 3} k_{min} - 1}$
