@@ -1,4 +1,5 @@
-[スライド](https://docs.google.com/presentation/d/1LM69XaUdYvsKkUYS6jgCOjWE56by1zBVcZX-h-NcqB8/edit#slide=id.p)にまとめた
+[スライド2023](https://docs.google.com/presentation/d/1LM69XaUdYvsKkUYS6jgCOjWE56by1zBVcZX-h-NcqB8/edit#slide=id.p)にまとめた
+[スライド2024](https://docs.google.com/presentation/d/1bmQSDSnPf4Z16UCsPzONAJFRqf7eGqYV/edit?usp=share_link&ouid=102830067142975015483&rtpof=true&sd=true)
 
 # Section 6.1 Introduction
 
