@@ -1,5 +1,6 @@
 # 9 Communities
 summerised by [Yatima Kagurazaka](https://twitter.com/Yatima_K)
+edited by Harunobu Kubo
 
 ## 9.1 Introduction
 
