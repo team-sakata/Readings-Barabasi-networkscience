@@ -1,5 +1,5 @@
 # 9 Communities
-summerised by [Yatima Kagurazaka](https://twitter.com/Yatima_K)
+summarised by [Yatima Kagurazaka](https://twitter.com/Yatima_K)
 edited by Harunobu Kubo
 
 ## 9.1 Introduction
@@ -82,11 +82,13 @@ $$k \le \sqrt {2L}  \hspace{20 mm} (9 . 14)$$
 ## 9.5 Overlapping Communities
 前の節でのアルゴリズムは，ノードごとに単一のコミュニティのみ割り当てられていたが，実際は並列や入れ子状に複数コミュニティに属することが多い
   
-### クリークパーコレーションアルゴリズム (CFinder)
+### クリークパーコレーションアルゴリズム ([CFinder](https://www.cfinder.org/))
 
 <img src="./figures/figure-9-20.jpg" alt="9.20 The Clique Percolation Algorithm (CFinder)">
 
 前の三角形と1つのリンクを共有するように，ネットワーク全体に三角形を転がしていく  
+cf. [Palla et al., 2005, Nat.](https://www.nature.com/articles/nature03607) Uncovering the overlapping community structure of complex networks in nature and society
+Package Out of the box - 
   
 ### リンククラスタリング  
 ノードは複数コミュニティに属しても，リンクは単一コミュニティであることが多いという前提でのアルゴリズム．詳細は原著参照  
